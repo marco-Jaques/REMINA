@@ -1,0 +1,159 @@
+.site {
+    max-width: 1920px;
+    /* Largura max de 1200 px */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.perfil{
+    width: 765px;
+    height: 600px;
+    background-color: #EBEBEB;
+    border-radius: 20px;
+    position: relative;
+    top: 35px;
+    left: 6%;
+    padding: 35px 0px 35px 20px;
+}
+
+.perfil div:nth-child(1){
+display: flex;
+}
+
+#imagem{
+    width: 200px;
+    height: 200px;
+}
+
+#bandeira{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 55px;
+    left: 40px;
+}
+
+.perfil_conteudo{
+    height: 188px;
+    position: relative;
+    left: 2%;
+}
+
+.perfil_conteudo h2{
+    color: #071429;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+}
+
+.textos p{
+    color: #071429;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    margin-bottom: 14px;
+    position: relative;
+    left: 8%;
+    bottom: 33px;
+}
+
+#icone1{
+    width: 34px;
+    height: 26px;
+}
+
+#icone2{
+    width: 34px;
+    height: 41px;
+    position: relative;
+    right: 50px;
+    top: 93px;
+}
+
+.sobre_prof img{
+    width: 96px;
+    height: 14px;
+    position: relative;
+    top: 97px;
+    left: 7%;
+}
+
+#avaliacao{
+    color: #071429;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    margin-bottom: 14px;
+    position: relative;
+    top: 140px;
+}
+
+.sobre_prof a{
+    background-color: #A20505;
+    width: 245px;
+    height: 33px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 23px;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    position: relative;
+    left: 52%;
+    top: 100px;
+}
+
+.sobre_texto{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre_texto h2{
+    color: #071429;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+}
+
+.sobre_texto p{
+    color: #071429;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    width: 749px;
+}
+
+.historico{
+    width: 765px;
+    height: 600px;
+    background-color: #EBEBEB;
+    border-radius: 20px;
+    position: relative;
+    bottom: 635px;
+    left: 51%;
+    padding: 35px 0px 35px 20px;
+}
+
+.historico h2{
+    color: #071429;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+}
+
+.historico img{
+    position: relative;
+    left: 83%;
+    bottom: 10px;
+}
+
+.historico_conteudo p{
+    color: #071429;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    width: 749px;
+    margin-bottom: 10px;
+}
+
+.historico_conteudo p:nth-child(2){
+font-style: italic;
+}
+
+#altura{
+    height: 710px;
+}

@@ -1,0 +1,90 @@
+html{
+    background-color: #071429;
+}
+
+.projetos {
+    background-color: #071429;
+    width: 100%;
+}
+
+.aba_funcionario{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filtro{
+    display: flex;
+    width: 20%;
+    background-color: #EBEBEB;
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px;
+    justify-content: center;
+    left: 10%;
+    top: 95px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.filtro_botoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro_botoes button{
+    width: 245px;
+    height: 49px;
+    background-color: #FFFFFF; /* Cor de fundo do botão */
+    color: #071429; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 10px;
+}
+
+.objects{
+    position: relative;
+    left: 34%;
+    bottom: 271px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EBEBEB;
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px;
+}
+
+.box{
+    float: left;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    display: none;
+    padding: 20px 0px 20px 0px;
+}
+
+.show{
+    display: block;
+}
+
+.box_content{
+    display: flex;
+}
+
+.box_content h2{
+    margin-left: 20px;
+}
+
+.box_content a{
+    background-color: #C8C8C8;
+    width: 245px;
+    height: 33px;
+    color: #071429;
+    border: none;
+    border-radius: 5px;
+    font-size: 23px;
+    font-family: 'JetBrains Mono', monospace;
+    position: absolute;
+    left: 66%;
+}

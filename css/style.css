@@ -1,0 +1,275 @@
+body {
+    font-family: 'JetBrains Mono', monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30px;
+}
+
+html{
+    background-color: #071429;
+}
+
+/* Estilos para o menu lateral */
+.sidebar {
+    height: 100%;
+    width: 0; /* Define a largura inicial como zero */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #071429; /* Cor de fundo do menu lateral */
+    padding-top: 50px;
+    color: #FFF; /* Cor do texto no menu lateral */
+    overflow-x: hidden; /* Esconde o conteúdo que ultrapassar a largura do menu */
+    transition: 0.5s; /* Adiciona uma transição suave de 0.5 segundos */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+}
+
+.sidebar ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Quando o mouse passa sobre o símbolo de menu, expande o menu */
+.sidebar:hover {
+    width: 250px; /* Define a largura do menu quando o mouse passa sobre ele */
+}
+
+.sidebar:hover + .main-content {
+    margin-left: 250px; /* Move o conteúdo principal para a direita quando o mouse passa sobre o menu */
+}
+
+.sidebar.show {
+    width: 250px; /* Define a largura do menu quando o botão de menu é clicado */
+    z-index: 1;
+}
+
+.main-content {
+    transition: margin-left 0.5s; /* Adiciona uma transição suave para o deslocamento do conteúdo principal */
+}
+
+/* Ajuste de layout para telas menores */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Ajusta a largura da barra lateral para telas menores */
+    }
+
+    .sidebar.show {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px; /* Ajusta o deslocamento do conteúdo principal para telas menores */
+    }
+}
+
+/* Estilização do ícone de menu */
+.menu-icon {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    background-color: #071429;
+    color: #FFF;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
+    z-index: 1; /* Certifica-se de que o ícone esteja acima do menu lateral */
+}
+
+/* ####### CABEÇALHO ######## */
+.header-content {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui os itens horizontalmente */
+    background-color: #071429;
+    color: #BE1515;
+    padding: 10px 50px; 
+    text-align: left;
+    text-shadow: 1px 1px 3px rgba(244, 90, 170, 0.8);
+}
+
+.header-content h1{
+    position: relative;
+    left: 85px;
+}
+
+.header-content nav ul {
+    background-color: #071429;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remova a margem padrão */
+}
+
+.header-content nav ul li {
+    display: inline;
+    margin-right: 60px;
+}
+
+.header-content nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.site {
+    max-width: 1920px;
+    /* Largura max de 1200 px */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home{
+    display: flex;
+}
+
+.alinhamento {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.paragrafos {
+    font-weight: 400;
+    font-size: 38px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #FFFFFF;
+    letter-spacing: 9px;
+    position: relative;
+    top: 94px;
+    height: 235px;
+    left: 25px;
+}
+
+.paragrafos p:nth-child(2) {
+    background-color: #071429;
+    font-weight: 400;
+    font-family: 'JetBrains Mono', monospace;
+    color: #A20505;
+}
+
+.alinhamento_2{
+    display: flex;
+    position: relative;
+    left: 30px;
+    width: 44%;
+}
+
+.botao1 {
+    position: relative;
+    top: -254px;
+    left: 352px;
+    width: 246px;
+    height: 49px;
+    background-color: #FFFFFF; /* Cor de fundo do botão */
+    color: #071429; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-size: 17px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.botao2 {
+    position: relative;
+    top: -175px;
+    left: 90px;
+    width: 245px;
+    height: 49px;
+    background-color: #FFFFFF; /* Cor de fundo do botão */
+    color: #071429; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.retangulo {
+    width: 400px;
+    height: 150px;
+    background-color: #EBEBEB;
+    border-radius: 20px;
+    position: relative;
+    top: -15px;
+    left: 20%;
+    z-index: 1; /* Define a ordem de empilhamento */
+}
+
+.retangulo input[type="text"] {
+    margin-top: 15px;
+    width: 200px; /* Define a largura do campo de texto */
+    height: 30px; /* Define a altura do campo de texto */
+}
+
+.elementos_retangulo{
+position: relative;
+top: 40px;
+left: 20px;
+}
+
+.elementos_retangulo p{
+    color: #071429;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    font-size: 25px;
+    z-index: 2; /* Define a ordem de empilhamento para ficar à frente do retângulo */
+}
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 165px;
+    width: 645px;
+}
+
+.sobre h2{
+    font-weight: 800;
+    font-size: 58px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #A20505;
+    letter-spacing: 9px;
+    margin-bottom: 20px;
+}
+
+.sobre p{
+    background-color: #071429;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.sobre a{
+    background-color: #A20505;
+    width: 245px;
+    height: 33px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    font-size: 23px;
+    font-family: 'JetBrains Mono', monospace;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    background-color: #071429;
+}
+
+.rodape p{
+    font-weight: normal;
+    font-family: 'JetBrains Mono', monospace;
+    color: #FFFFFF;
+	font-size: 10px
+}
